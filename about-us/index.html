@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="../static/favicon.png" type="image/png">
+    <title>Монтанья - СПБ. О нас</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function(){
+            document.getElementById('blockImg').style.maxHeight = $('#imgHeight').height() + "px";
+            document.getElementById('blockImg1').style.maxHeight = $('#imgHeight').height() + "px";
+            document.getElementById('blockImg2').style.maxHeight = $('#imgHeight').height() + "px";
+            var a = document.getElementsByClassName('relati');
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.height = $('#imgHeight').height() + "px";
+                a[i].style.top = "-" + $('#imgHeight').height() + "px";
+            }
+            document.getElementById('zeroModal').setAttribute('data-target', "#zeroModalCenter");
+            document.getElementById('firstModal').setAttribute('data-target', "#firstModalCenter");
+            document.getElementById('secondModal').setAttribute('data-target', "#secondModalCenter");
+        }, 1500)
+        
+    </script>
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-lg-3 d-block d-lg-flex align-items-top"><a href="https://montanja-spb.ru/" class="d-flex align-items-center"><img class="logo" src="static/logoWhite.png" alt="logo"></a></div>
+                <nav class="navbar navbar-expand-lg navigation col-6 col-lg-9">
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon burger"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/catalogue">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/promotions">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="min-width: 79px;" href="https://montanja-spb.ru/about-us">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/contacts">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="toForm nav-link" href="https://montanja-spb.ru/#form"><img src="static/icons/calculate.png" alt="calc">Заказать расчет</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="arrow-to-top" id="arrow_upward" onclick="scrollToTop()"></div>
+
+        <div class="container about-us-block">
+            <div class="imgOfMountain" id="mountain"><div class="relative" id="relative"></div></div>
+            <h2 class="titleh2 text-center mb-5" id="titleOfPromotion">О нас</h2>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-start">
+                <div class="col-xs-12 col-lg-8 descriptionComapny mb-3">
+                    <p><i>Пожалуй, лучшие кухни из Беларуси</i></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="paragraph">Продукция фабрики "Монтанья" зарекомендовала себя на мебельном рынке Беларуси и России в первую очередь <b>качеством</b>: в цехах фабрики уставленно самое современное оборудование для произвдства кухонь - а это, как известно, основной фактор, от которого оно зависит.</p>
+                    <p class="paragraph">Но это отнюдь не говорит о том, что качественная и функциональная мебель должна быть дорогой: компания "Монтанья" занимается производством мебели, отличающийся <b>оптимальным соотношением цены и качества.</b></p>
+                    <p class="paragraph">Белорусские кухни от фабрики "Монтанья" - это высококачественные изделия, изготовленные из современных, <b>экологически чистых,</b> износостойких и безопасных материалов</p>
+                </div>
+            </div>
+            <div class="card-deck row mt-4 mb-4 d-flex justify-content-between">
+                <div class="col-xs-12 col-lg-4 mb-3" id="blockImg">
+                    <img src="static/about0.jpg" class="beforeModalImg" alt="zero" id="imgHeight">
+                    <div class="d-none d-lg-block relati" data-toggle="modal" id="zeroModal"></div>
+                </div>
+                <div class="col-xs-12 col-lg-4 mb-3" id="blockImg1">
+                    <img src="static/about1.jpg" class="beforeModalImg" alt="first">
+                    <div class="d-none d-lg-block relati" data-toggle="modal" id="firstModal"></div>
+                </div>
+                <div class="col-xs-12 col-lg-4" id="blockImg2">
+                    <img src="static/about2.jpg" class="beforeModalImg" alt="second">
+                    <div class="d-none d-lg-block relati" data-toggle="modal" id="secondModal"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="mb-3 mt-3 advantages">Преимущества кухонь нашей фабрики</h5>
+                    <ul class="list">
+                        <li>Высококачественные материалы и фурнитура ведущих производителей</li>
+                        <li>Передовые технологии изготовления</li>
+                        <li>Высококвалифицированный персонал</li>
+                        <li>Индивидуальный подход к каждому клиенту</li>
+                        <li>Многообразие моделей и стилевых решений</li>
+                    </ul>
+                    <p class="paragraph">Это далеко не полный перечень <b>конкурентых преимуществ</b> кухонных гарнитуров фабрики "Монтанья".</p>
+                    <p class="paragraph mb-5">Таким образом, приобретая продукцию компании "Монтанья" вы становитесь обладателем кухонной мебели, максимально соответствующей вашим пожеланиям, вашему вкусу и отвечающей вашим предствалениям о функциональности, качестве и эстетике!</p>
+                </div>
+            </div>
+            
+
+            <!-- Modal -->
+
+            <div class="modal fade" id="zeroModalCenter" tabindex="-1" role="dialog" aria-labelledby="zeroModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="zeroModalCenterTitle">О компании</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img class="modalImg" src="static/about0.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="firstModalCenter" tabindex="-1" role="dialog" aria-labelledby="firstModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="firstModalCenterTitle">О компании</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img class="modalImg" src="static/about1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="secondModalCenter" tabindex="-1" role="dialog" aria-labelledby="secondModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="secondModalCenterTitle">О компании</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center align-items-center">
+                            <img class="modalImg" src="static/about2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Modal -->
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row flex-column d-flex justify-content-center align-items-center">
+                <h3 class="titleFooter mt-3 text-center">Приезжайте к нам в салон</h3>
+                <div class="col-12 col-lg-8 mb-5 mt-5 textFooter text-center"><span class="font-weight-bold">Наш адрес :</span> Санкт-Петербург, метро Электросила, ул. Варшавская, д. 3, МЦ  “Мебельный континент”, корпус 1, этаж 3, секция 345. Для вашего удобства, пожалуйста, заранее договаривайтесь о времени визита по тел. +7(921) 301-50-09</div>
+                <div class="d-flex justify-content-end align-items-center mb-3 textFooter">Мы в социальных сетях<a class="linkToSoc d-none" href="#" target="_blank"><div class="icons vk"></div></a><a class="linkToSoc" href="https://www.instagram.com/i_kitchen_spb/" target="_blank"><div class="icons instagram"></div></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/arrow.js" defer></script>
+    <script src="js/promotion.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+body {
+    margin: 0;
+}
+
+@keyframes logo {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes moveTo {
+    0% {margin-right: -100%; color: rgba(0, 0, 0, 0.7);}
+    100% {color: white; margin-right: 0;}
+}
+
+@keyframes shine {
+    0% {background: #F8463F;}
+    25% {background: rgb(248, 70, 63); box-shadow: 0 0 1px 5px rgba(248, 70, 63, 0.5), 0 0 0 3px #F8463F, 0 21px 5px -18px rgba(0,0,0,0.6);}
+    50% {background: rgb(248, 70, 63); box-shadow: 0 0 1px 15px rgba(248, 70, 63, 0.3), 0 0 0 3px #F8463F, 0 21px 5px -18px rgba(0,0,0,0.6);}
+    75% {background: rgb(248, 70, 63); box-shadow: 0 0 1px 25px rgba(248, 70, 63, 0), 0 0 0 3px #F8463F, 0 21px 5px -18px rgba(0,0,0,0.6);}
+    100% {background: rgb(248, 70, 63); box-shadow: 0 0 1px 3px rgba(248, 70, 63, 0), 0 0 0 3px #F8463F, 0 21px 5px -18px rgba(0,0,0,0.6);}
+}
+
+@keyframes move-from-bottom {
+    from {margin-left: 50px; opacity: 0;}
+    to {margin-left: 0; opacity: 1;}
+}
+
+@keyframes toZero {
+    0% {opacity: 1; display: none;}
+    100% {opacity: 0;}
+}
+
+@keyframes toOne {
+    0% {opacity: 0; display: block;}
+    100% {opacity: 1;}
+}
+
+@keyframes mountain {
+    from {top: 0;}
+    to {top: -105px;}
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 0.4;}
+}
+
+.logo {
+    animation: logo 2s linear;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+header .container-fluid {
+    padding: 10px 20px;
+}
+
+.navigation a {
+    animation: logo 2s linear;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 16px!important;
+    margin: 5px 20px;
+    font-size: 18px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 991.99px) {
+    .logo {
+        width: 45%;
+    }
+
+    .toForm img {
+        width: 30px;
+        margin-right: 7px;
+    }
+
+    .navigation a:hover {
+        color: #fff;
+        text-decoration: none;
+        transition: .25s linear;
+        box-shadow: inset 0 -3px 0 0 #fff;
+    }
+
+    .carousel-caption h3 {
+        padding: 5px 25px;
+        font-size: 3.3em;
+    }
+
+    .carousel-caption {
+        top: 22%;
+    }
+
+    .toNewWeb a p, .toNewWeb p, .toNewWebWhite p, .titleForImg, .card-title {
+        font-size: 24px;
+    }
+
+    .textForImg, .textFooter, .card-text, .plus-example p, .list {
+        font-size: 20px;
+    }
+    
+    .plus-example {
+        padding: 1.5rem;
+    }
+
+    .forImg img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .for-img-example-0, .for-img-example-1, .for-img-example-2, .for-img-example-3, .for-img-example-4, .for-img-example-5 {
+        height: 20em;
+    }
+
+    .contactLineText p {
+        font-size: 1.3em;
+    }
+
+    .contactLineTitle h5 {
+        font-size: 1.65em;
+    }
+
+    .descriptionComapny, .titleFooter {
+        font-size: 40px;
+    }
+
+    .paragraph {
+        text-indent: 64px;
+        font-size: 20px;
+    }
+
+    footer .container-fluid {
+        padding: 20px 60px;
+    }
+
+    .icons {
+        width: 30px;
+        height: 30px;
+    }
+
+    .promotions-block-newWeb {
+        padding-top: 120px;
+    }
+
+    .downloadCat {
+        font-size: 2.3em;
+    }
+
+    .contacts-block, .about-us-block, .catalogue-block {
+        margin: 150px auto 0 auto;
+    }
+
+    .contacts-block .row {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .logo {
+        width: 65%;
+    }
+    
+    .nav-item a {
+        font-size: 30px;
+    }
+
+    .carousel-item img {
+        height: 800px;
+    }
+
+    .toForm img {
+        width: 50px;
+        height: 50px;
+        margin-right: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navigation a:hover {
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 0 12px white;
+    }
+
+    .carousel-caption h3 {
+        font-size: 64px;
+        padding: 3px 15px;
+    }
+
+    .carousel-caption {
+        top: 35%;
+        right: 10%;
+        left: 10%;
+    }
+
+    .titleh2 {
+        font-size: 3.5em;
+    }
+
+    .plus-example h4 {
+        font-size: 3em;
+    }
+
+    .toNewWeb a p, .toNewWeb p, .toNewWebWhite p, .titleForImg, .card-title, .contactLineTitle h5 {
+        font-size: 40px;
+    }
+
+    .plus-example {
+        padding: 2.5rem;
+    }
+
+    .forImg img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .for-img-example-0, .for-img-example-1, .for-img-example-2, .for-img-example-3, .for-img-example-4, .for-img-example-5 {
+        height: 28em;
+    }
+
+    .promotions-block {
+        margin-top: 0;
+    }
+
+    .textForImg, .textFooter, .card-text, .plus-example p, form p, form label, .contactLineText p {
+        font-size: 32px;
+    }
+
+    .form-control {
+        font-size: 2.4rem;
+    }
+
+    #timeOrder {
+        font-size: 160%;
+    }
+
+    .paragraph {
+        text-indent: 32px;
+    }
+
+    .paragraph, .list {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .advantages {
+        font-size: 3rem;
+    }
+
+    footer .container-fluid {
+        padding: 80px 60px;
+    }
+
+    .titleFooter, .descriptionComapny {
+        font-size: 50px;
+    }
+
+    .icons {
+        width: 50px;
+        height: 50px;
+    }
+
+    .promotions-block-newWeb {
+        padding-top: 250px;
+    }
+
+    .downloadCat {
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    .contacts-block, .about-us-block, .catalogue-block {
+        margin: 250px auto 0 auto;
+    }
+
+    .contacts-block .row {
+        margin-bottom: 30px;
+    }
+    
+    #catalogueFooter {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.burger {
+    width: 75px;
+    height: 75px;
+}
+
+.toForm {
+    outline: none;
+    background-color: rgb(114, 184, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.toForm:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: .25s linear;
+    box-shadow: 0 0 0 3px white, 0 0 0 6px rgb(114, 184, 241)!important;
+}
+
+.toForm img {
+    user-select: none;
+}
+
+.arrow-to-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.7);
+    background-image: url(images/arrow_upward.png);
+    background-size: cover;
+    top: 90%;
+    left: 93%;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.opacityZero {
+    animation: toZero 0.5s linear;
+}
+
+.opacityOne {
+    animation: toOne 0.5s linear;
+}
+
+.carousel-caption h3 {
+    animation: moveTo 1s linear;
+    text-shadow: 4px 0 2.5px black;
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+    user-select: none;
+}
+
+.slider {
+    margin-bottom: 0;
+}
+
+.titleh2 {
+    margin-bottom: 50px;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.promotions-example {
+    margin-bottom: 20px;
+}
+
+.promotions-block {
+    padding-top: 80px;
+}
+
+.promotions-block-newWeb {
+    margin-bottom: 100px;
+}
+
+.promotions-block, .our-projects-block, .our-pluses-block {
+    margin: 100px auto;
+}
+
+.for-img-example-0, .for-img-example-1, .for-img-example-2, .for-img-example-3, .for-img-example-4, .for-img-example-5 {
+    width: 100%;
+    user-select: none;
+}
+
+.for-img-example-0 {
+    background-image: url(images/4.jpg);
+    background-size: cover;
+}
+
+.for-img-example-1 {
+    background-image: url(images/lite2.jpg);
+    background-size: cover;
+}
+
+.for-img-example-2 {
+    background-image: url(images/6.jpg);
+    background-size: cover;
+}
+
+.for-img-example-3 {
+    background-image: url(images/lite1.jpg);
+    background-size: cover;
+}
+
+.for-img-example-4 {
+    background-image: url(images/5.jpg);
+    background-size: cover;
+}
+
+.for-img-example-5 {
+    background-image: url(images/lite3.jpg);
+    background-size: cover;
+}
+
+.for-img {
+    width: 100%;
+    height: 30em;
+    background-image: url(https://mr-mebel.com/wp-content/uploads/2018/04/mont3.jpg);
+    background-position: 0 60%;
+    background-size: cover;
+}
+
+.wrap {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    margin-right: 8px;
+    overflow: hidden;
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.wrap:before, .wrap:after {
+    content: ""; 
+    position: absolute;
+}
+
+.wrap:before {
+    width: 40px;
+    height: 8px;
+    right: 163px;
+    background: #C02031;
+    border-radius: 8px 8px 0 0;
+}
+
+.wrap:after {
+    width: 8px;
+    height: 40px;
+    right: 0;
+    top: 163px;
+    background: #C02031;
+    border-radius: 0 8px 8px 0;
+}
+
+.ribbon {
+    width: 275px;
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    top: 30px;
+    right: -70px;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px dashed;
+    box-shadow: 0 0 0 3px #F8463F,  0 21px 5px -18px rgba(0,0,0,0.6);
+    background: #F8463F;
+    text-align: center;
+    animation: shine 4s linear infinite;
+}
+
+.toPromotions, .toPromotions:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toNewWeb {
+    outline: none;
+    background-color: rgb(114, 184, 241);
+    color: white;
+    border: none;
+}
+
+.animationForButton {
+    animation: move-from-bottom 1s linear;
+}
+
+.linkToPromotions {
+    text-decoration: none;
+    color: white;
+}
+
+.toNewWeb a p, .toNewWebWhite p, .toNewWeb p {
+    margin: 0.3em;
+}
+
+.toNewWeb:focus {
+    outline: none;
+}
+
+.toNewWeb:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: .25s linear;
+    box-shadow: 0 0 0 3px white, 0 0 0 6px rgb(114, 184, 241);
+}
+
+.toNewWeb a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toNewWebWhite {
+    outline: none;
+    background-color: white;
+    color: rgb(114, 184, 241);
+    border: none;
+}
+
+.toNewWebWhite:focus {
+    outline: none;
+}
+
+.toNewWebWhite:hover {
+    color: rgb(114, 184, 241);
+    text-decoration: none;
+    transition: .25s linear;
+    box-shadow: 0 0 0 3px rgb(114, 184, 241), 0 0 0 6px white, 0 0 0 6.01px rgb(54, 54, 54);
+}
+
+.plus-example {
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+
+.linkToCatalogue, .linkToAboutUs {
+    text-decoration: none;
+    color: white;
+}
+
+.about-factory-block {
+    margin: 100px auto;
+}
+
+.number-block {
+    border: solid 3px rgba(0, 0, 0, 0.7);
+}
+
+.number {
+    font-size: 84px;
+}
+
+.forImg img {
+    user-select: none;
+    margin-bottom: 1rem;
+}
+
+.formOrder {
+    padding-top: 100px;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+
+.vk {
+    background-image: url(https://vekzabora.ru/uploads/elfinder/VK-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+
+}
+
+.instagram {
+    background-image: url(https://auachicago.org/wp-content/uploads/2018/09/Instagram_white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+}
+
+.instagram:hover {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/264px-Instagram_logo_2016.svg.png);
+    user-select: none;
+}
+
+.vk:hover {
+    background-image: url(https://aachibilyaev.com/upload/iblock/c81/c81828496fd249f24e8f951868ae424f.png);
+    user-select: none;
+}
+
+.linkToSoc {
+    margin-left: 1em;
+}
+
+hr {
+    margin-bottom: 100px;
+}
+
+.relative {
+    position: relative;
+    background-color: #fff;
+    animation: mountain 1.5s linear;
+    transition: 2s linear;
+    top: -105px;
+}
+
+.imgOfMountain {
+    width: 290px;
+    height: 100px;
+    margin: 0 auto;
+    user-select: none;
+    background-image: url(images/mountain.png);
+}
+
+#map {
+    min-height: 500px;
+    max-height: 800px;
+}
+
+.maps-block {
+    margin: 100px auto;
+}
+
+.forImgContact img {
+    width: 35px;
+    height: 35px;
+    user-select: none;
+}
+
+.contactLineImg {
+    display: inline-block;
+}
+
+.contactLineTitle h5 {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.contactLineText {
+    min-height: 35px;
+}
+
+.contactLineText p {
+    margin-bottom: 0;
+}
+
+.paragraph {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.card-deck .card {
+    margin: 0;
+    width: 100%;
+}
+
+.modalImg {
+    max-width: 100%;
+}
+
+.beforeModalImg {
+    opacity: 1;
+    transition: all linear 0.5s;
+    max-width: 100%;
+}
+
+.beforeModalImg:hover {
+    cursor: pointer;
+}
+
+.relati {
+    position: relative;
+    background-color: #000;
+    opacity: 0;
+}
+
+.relati:hover {
+    cursor: pointer;
+    animation: opacity 0.5s linear;
+    opacity: 0.4;
+}
+
+.downloadCat {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+.downloadCat:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.margins {
+    margin: 70px 0 100px 0;
+}

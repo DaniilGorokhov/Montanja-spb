@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="../static/favicon.png" type="image/png">
+    <title>Монтанья - СПБ. Контакты</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3c8363fc-5354-4676-805b-50d80847213c&lang=ru_RU" type="text/javascript" defer></script>
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-lg-3 d-block d-lg-flex align-items-top"><a href="https://montanja-spb.ru/" class="d-flex align-items-center"><img class="logo" src="static/logoWhite.png" alt="logo"></a></div>
+                <nav class="navbar navbar-expand-lg navigation col-6 col-lg-9">
+                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon burger"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/catalogue">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/promotions">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="min-width: 79px;" href="https://montanja-spb.ru/about-us">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://montanja-spb.ru/contacts">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="toForm nav-link" href="https://montanja-spb.ru/#form"><img src="static/icons/calculate.png" alt="calc">Заказать расчет</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="arrow-to-top" id="arrow_upward" onclick="scrollToTop()"></div>
+
+        <div class="container contacts-block">
+            <div class="imgOfMountain" id="mountain"><div class="relative" id="relative"></div></div>
+            <h2 class="titleh2 text-center mb-5">Контакты</h2>
+            <div class="row">
+                <div class="col-5">
+                    <div class="contactLineTitle d-flex align-items-center" id="addressTitle"><div class="contactLineImg forImgContact mr-3 d-none d-lg-block"><img src="static/icons/address.png" alt="icon"></div><h5>Наш адрес</h5></div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                    <div class="contactLineText" id="address"><p>Санкт-Петербург, метро Электросила, ул. Варшавская, д. 3, МЦ  “Мебельный континент”, корпус 1, этаж 3, секция 345</p></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="contactLineTitle d-flex align-items-center"><div class="contactLineImg forImgContact mr-3 d-none d-lg-block"><img src="static/icons/clock.png" alt="icon"></div><h5>Время работы</h5></div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                    <div class="contactLineText"><p>Ежедневно с 11:00 до 20:00</p></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="contactLineTitle d-flex align-items-center"><div class="contactLineImg forImgContact mr-3 d-none d-lg-block"><img src="static/icons/phone.png" alt="icon"></div><h5>Контактный номер телефона</h5></div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                    <div class="contactLineText"><p>+7(921) 301-50-09</p></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="contactLineTitle d-flex align-items-center"><div class="contactLineImg forImgContact mr-3 d-none d-lg-block"><img src="static/icons/mail.png" alt="icon"></div><h5>E-mail адрес</h5></div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                    <div class="contactLineText"><p>montanja-spb@yandex.ru</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container maps-block">
+            <div class="row">
+                <div class="col-12" id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row flex-column d-flex justify-content-center align-items-center">
+                <h3 class="titleFooter mt-3 text-center">Приезжайте к нам в салон</h3>
+                <div class="col-12 col-lg-8 mb-5 mt-5 textFooter text-center"><span class="font-weight-bold">Наш адрес :</span> Санкт-Петербург, метро Электросила, ул. Варшавская, д. 3, МЦ  “Мебельный континент”, корпус 1, этаж 3, секция 345. Для вашего удобства, пожалуйста, заранее договаривайтесь о времени визита по тел. +7(921) 301-50-09</div>
+                <div class="d-flex justify-content-end align-items-center mb-3 textFooter">Мы в социальных сетях<a class="linkToSoc d-none" href="#" target="_blank"><div class="icons vk"></div></a><a class="linkToSoc" href="https://www.instagram.com/i_kitchen_spb/" target="_blank"><div class="icons instagram"></div></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('addressTitle').style.height = $('#address').height() + "px";
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/arrow.js" defer></script>
+    <script src="js/promotion.js" defer></script>
+    <script src="js/ymaps.js" defer></script>
+</body>
+</html>
