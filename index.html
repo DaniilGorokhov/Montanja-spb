@@ -14,7 +14,7 @@
         gtag('config', 'UA-162234805-1');
     </script>
     <!--Google Analitics end-->
-    <meta name="yandex-verification" content="130f7509b989d4b8" />`
+    <meta name="yandex-verification" content="130f7509b989d4b8" />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -42,11 +42,11 @@
             <div class="row">
                 <div class="col-6 col-lg-3 d-block d-lg-flex align-items-top"><a href="https://montanja-spb.ru/" class="d-flex align-items-center"><img class="logo" src="static/logoWhite.png" alt="logo"></a></div>
                 <nav class="navbar navbar-expand-lg navigation col-6 col-lg-9">
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="toggleVisibilityMenuLinks" class="navbar-toggler navbar-dark" type="button" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon burger"></span>
                     </button>
                     
-                    <div class="collapse navbar-collapse" id="navbarToggler">
+                    <div class="d-none d-lg-block" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="https://montanja-spb.ru/">Главная</a>
@@ -296,6 +296,16 @@
         </div>
     </footer>
 
+    <script>
+        let visibilityMenu = false;
+        let navbarSupportedContent = document.getElementById('navbarSupportedContent');
+        let toggler = document.getElementById('toggleVisibilityMenuLinks');
+
+        toggler.onclick = function() {
+            visibilityMenu = !visibilityMenu;
+            navbarSupportedContent.classList.toggle('d-none');
+        };
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

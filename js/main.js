@@ -52,4 +52,4 @@ wow0 = setInterval(function () {
         el = document.getElementById("aboutUsButton");
         el.className += " animationForButton"
     }
-}, 10)
+}, 10);

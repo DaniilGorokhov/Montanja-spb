@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
-body {
+body, html {
     margin: 0;
 }
 
 @keyframes logo {
-    0% {opacity: 0;}
+    0% {opacity: 0.2;}
     100% {opacity: 1;}
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-    animation: logo 2s linear;
+    animation: logo 1s linear;
 }
 
 header {

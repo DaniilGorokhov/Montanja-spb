@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
-body {
+body, html {
     margin: 0;
 }
 
 @keyframes logo {
-    0% {opacity: 0;}
+    0% {opacity: 0.2;}
     100% {opacity: 1;}
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-    animation: logo 2s linear;
+    animation: logo 1s linear;
 }
 
 header {
@@ -580,27 +580,26 @@ footer {
 }
 
 .vk {
-    background-image: url(https://vekzabora.ru/uploads/elfinder/VK-logo.png);
+    background-image: url(images/vkLogoWhite.png);
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
-
 }
 
 .instagram {
-    background-image: url(https://auachicago.org/wp-content/uploads/2018/09/Instagram_white.png);
+    background-image: url(images/instagramLogoWhite.png);
     background-repeat: no-repeat;
     background-size: cover;
-    user-select: none;
-}
-
-.instagram:hover {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/264px-Instagram_logo_2016.svg.png);
     user-select: none;
 }
 
 .vk:hover {
-    background-image: url(https://aachibilyaev.com/upload/iblock/c81/c81828496fd249f24e8f951868ae424f.png);
+    background-image: url(images/vkLogoColoured.png);
+    user-select: none;
+}
+
+.instagram:hover {
+    background-image: url(images/instagramLogoColoured.png);
     user-select: none;
 }
 
