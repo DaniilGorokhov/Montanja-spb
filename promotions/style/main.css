@@ -285,12 +285,13 @@ header .container-fluid {
     .contacts-block .row {
         margin-bottom: 30px;
     }
-    
+
     #catalogueFooter {
         position: fixed;
         left: 0;
         bottom: 0;
     }
+
 }
 
 .navigation {
