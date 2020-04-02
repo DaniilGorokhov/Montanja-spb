@@ -162,6 +162,10 @@ header .container-fluid {
     .contacts-block .row {
         margin-bottom: 20px;
     }
+
+    .special-margin-top {
+        margin-top: 6rem;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -290,6 +294,10 @@ header .container-fluid {
         position: fixed;
         left: 0;
         bottom: 0;
+    }
+
+    .special-margin-top {
+        margin-top: 14rem;
     }
 }
 

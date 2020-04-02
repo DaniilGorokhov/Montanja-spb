@@ -111,15 +111,15 @@
             </div>
             <div class="card-deck row mt-4 mb-4 d-flex justify-content-between">
                 <div class="col-xs-12 col-lg-4 mb-3" id="blockImg">
-                    <img src="static/about0.webp" class="beforeModalImg lazyload" alt="zero" id="imgHeight">
+                    <img name="forIEAndSafari" src="static/about0.webp" class="beforeModalImg lazyload" alt="zero" id="imgHeight">
                     <div class="d-none d-lg-block relati" data-toggle="modal" id="zeroModal"></div>
                 </div>
                 <div class="col-xs-12 col-lg-4 mb-3" id="blockImg1">
-                    <img src="static/about1.webp" class="beforeModalImg lazyload" alt="first">
+                    <img name="forIEAndSafari" src="static/about1.webp" class="beforeModalImg lazyload" alt="first">
                     <div class="d-none d-lg-block relati" data-toggle="modal" id="firstModal"></div>
                 </div>
                 <div class="col-xs-12 col-lg-4" id="blockImg2">
-                    <img src="static/about2.webp" class="beforeModalImg lazyload" alt="second">
+                    <img name="forIEAndSafari" src="static/about2.webp" class="beforeModalImg lazyload" alt="second">
                     <div class="d-none d-lg-block relati" data-toggle="modal" id="secondModal"></div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                             </button>
                         </div>
                         <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img class="modalImg" src="static/about0.webp" alt="">
+                            <img name="forIEAndSafari" class="modalImg" src="static/about0.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                             </button>
                         </div>
                         <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img class="modalImg" src="static/about1.webp" alt="">
+                            <img name="forIEAndSafari" class="modalImg" src="static/about1.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                             </button>
                         </div>
                         <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img class="modalImg" src="static/about2.webp" alt="">
+                            <img name="forIEAndSafari" class="modalImg" src="static/about2.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
             <div class="row flex-column d-flex justify-content-center align-items-center">
                 <h3 class="titleFooter mt-3 text-center">Приезжайте к нам в салон</h3>
                 <div class="col-12 col-lg-8 mb-5 mt-5 textFooter text-center"><span class="font-weight-bold">Наш адрес :</span> Санкт-Петербург, метро Электросила, ул. Варшавская, д. 3, МЦ  “Мебельный континент”, корпус 1, этаж 3, секция 345. Для вашего удобства, пожалуйста, заранее договаривайтесь о времени визита по тел. +7(921) 301-50-09</div>
-                <div class="d-flex justify-content-end align-items-center mb-3 textFooter">Мы в социальных сетях<a class="linkToSoc" href="https://vk.com/public193269359" target="_blank"><div class="icons vk"></div></a><a class="linkToSoc" href="https://www.instagram.com/i_kitchen_spb/" target="_blank"><div class="icons instagram"></div></a></div>
+                <div name="socialNetworks" class="d-flex justify-content-end align-items-center mb-3 textFooter">Мы в социальных сетях<a class="linkToSoc" href="https://vk.com/public193269359" target="_blank"><div class="icons vk"></div></a><a class="linkToSoc" href="https://www.instagram.com/i_kitchen_spb/" target="_blank"><div class="icons instagram"></div></a></div>
             </div>
         </div>
     </footer>
@@ -211,9 +211,14 @@
             visibilityMenu = !visibilityMenu;
             navbarSupportedContent.classList.toggle('d-none');
         };
+        if ((!!document.documentMode) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
+            let socialNetworksBlock = document.getElementsByName('socialNetworks')[0];
+            socialNetworksBlock.classList.add('special-margin-top');
+        }
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/arrow.js" defer></script>
+    <script src="js/main.js" defer></script>
     <script src="js/promotion.js" defer></script>
 </body>
 </html>

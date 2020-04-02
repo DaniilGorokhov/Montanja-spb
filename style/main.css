@@ -157,6 +157,10 @@ header .container-fluid {
     .contacts-block .row {
         margin-bottom: 20px;
     }
+
+    .special-margin-top {
+        margin-top: 6rem;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -286,6 +290,10 @@ header .container-fluid {
         left: 0;
         bottom: 0;
     }
+
+    .special-margin-top {
+        margin-top: 14rem;
+    }
 }
 
 .navigation {
@@ -383,32 +391,32 @@ header .container-fluid {
 }
 
 .for-img-example-0 {
-    background-image: url(images/4.webp);
+    background-image: url(images/4.jpg);
     background-size: cover;
 }
 
 .for-img-example-1 {
-    background-image: url(images/lite2.webp);
+    background-image: url(images/lite2.jpg);
     background-size: cover;
 }
 
 .for-img-example-2 {
-    background-image: url(images/6.webp);
+    background-image: url(images/6.jpg);
     background-size: cover;
 }
 
 .for-img-example-3 {
-    background-image: url(images/lite1.webp);
+    background-image: url(images/lite1.jpg);
     background-size: cover;
 }
 
 .for-img-example-4 {
-    background-image: url(images/5.webp);
+    background-image: url(images/5.jpg);
     background-size: cover;
 }
 
 .for-img-example-5 {
-    background-image: url(images/lite3.webp);
+    background-image: url(images/lite3.jpg);
     background-size: cover;
 }
 

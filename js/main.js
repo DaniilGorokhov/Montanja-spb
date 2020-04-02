@@ -53,3 +53,32 @@ wow0 = setInterval(function () {
         el.className += " animationForButton"
     }
 }, 10);
+
+if ((!!document.documentMode) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
+    a = [document.getElementById('first_carousel_item')];
+    b = [];
+    a.push(document.getElementById('second_carousel_item'));
+    a.push(document.getElementById('third_carousel_item'));
+    a.push(document.getElementById('fourth_carousel_item'));
+    a.push(document.getElementById('fifth_carousel_item'));
+    a.push(document.getElementById('first_vector_arrow'));
+    a.push(document.getElementById('second_vector_arrow'));
+    a.push(document.getElementById('first_icon'));
+    a.push(document.getElementById('second_icon'));
+    a.push(document.getElementById('third_icon'));
+    a.push(document.getElementById('fourth_icon'));
+    a.push(document.getElementById('fifth_icon'));
+    a.push(document.getElementById('sixth_icon'));
+    for (let i = 0; i < a.length; i++) {
+        b.push(a[i].src);
+        if (i > 4) {
+            b[i] = b[i].slice(0, b[i].length - 4) + 'png';
+            a[i].src = b[i];
+        } else {
+            b[i] = b[i].slice(0, b[i].length - 4) + 'jpg';
+            a[i].src = b[i];
+        }
+    }
+    let socialNetworksBlock = document.getElementsByName('socialNetworks')[0];
+    socialNetworksBlock.classList.add('special-margin-top');
+}
