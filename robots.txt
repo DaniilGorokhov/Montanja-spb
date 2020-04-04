@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /Montanja_katalog_2017-2018.pdf
+Disallow: /thanks/
+Sitemap: https://montanja-spb.ru/sitemap.xml

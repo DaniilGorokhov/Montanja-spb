@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="кухни монтанья, описание фабрики монтанья">
-    <meta name="description" content='О нас. Продукция фабрики "Монтанья" зарекомендовала себя на мебельном рынке Беларуси и России в первую очередь качеством: в цехах фабрики уставленно самое современное оборудование для произвдства кухонь - а это, как известно, основной фактор, от которого оно зависит.'>
+    <meta name="description" content='О нас. Продукция фабрики "Монтанья" зарекомендовала себя на мебельном рынке Беларуси и России в первую очередь качеством: в цехах фабрики установлено самое современное оборудование для произвдства кухонь - а это, как известно, основной фактор, от которого оно зависит.'>
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="canonical" href="https://montanja-spb.ru/about-us/"/>
     <link rel="shortcut icon" href="../static/favicon.png" type="image/png">
     <title>Монтанья - СПБ. О нас</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,7 +34,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/61519021" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="../node_modules/lazysizes.min.js"></script>
     <script>
         setTimeout(function(){
@@ -48,7 +49,7 @@
             document.getElementById('zeroModal').setAttribute('data-target', "#zeroModalCenter");
             document.getElementById('firstModal').setAttribute('data-target', "#firstModalCenter");
             document.getElementById('secondModal').setAttribute('data-target', "#secondModalCenter");
-        }, 1500)
+        }, 1000)
         
     </script>
 </head>
@@ -104,8 +105,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="paragraph">Продукция фабрики "Монтанья" зарекомендовала себя на мебельном рынке Беларуси и России в первую очередь <b>качеством</b>: в цехах фабрики уставленно самое современное оборудование для произвдства кухонь - а это, как известно, основной фактор, от которого оно зависит.</p>
-                    <p class="paragraph">Но это отнюдь не говорит о том, что качественная и функциональная мебель должна быть дорогой: компания "Монтанья" занимается производством мебели, отличающийся <b>оптимальным соотношением цены и качества.</b></p>
+                    <p class="paragraph">Продукция фабрики "Монтанья" зарекомендовала себя на мебельном рынке Беларуси и России в первую очередь <b>качеством</b>: в цехах фабрики уставленно самое современное оборудование для производства кухонь - а это, как известно, основной фактор, от которого оно зависит.</p>
+                    <p class="paragraph">Но это отнюдь не говорит о том, что качественная и функциональная мебель должна быть дорогой: компания "Монтанья" занимается производством мебели, отличающейся <b>оптимальным соотношением цены и качества.</b></p>
                     <p class="paragraph">Белорусские кухни от фабрики "Монтанья" - это высококачественные изделия, изготовленные из современных, <b>экологически чистых,</b> износостойких и безопасных материалов</p>
                 </div>
             </div>
@@ -215,10 +216,18 @@
             let socialNetworksBlock = document.getElementsByName('socialNetworks')[0];
             socialNetworksBlock.classList.add('special-margin-top');
         }
+        if (!!document.documentMode) {
+            for (let i = 0; i < 3; i++) {
+                let modalImg = document.getElementsByClassName('modalImg')[i];
+                modalImg.style.width = '100%';
+                let modalBody = document.getElementsByClassName('modal-body')[i];
+                modalBody.classList.remove('align-items-center');
+                modalBody.classList.add('align-items-start');
+            }
+        }
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-4.0.0.min.js"></script>
     <script src="js/arrow.js" defer></script>
-    <script src="js/main.js" defer></script>
     <script src="js/promotion.js" defer></script>
 </body>
 </html>

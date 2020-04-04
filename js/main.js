@@ -33,7 +33,7 @@ if (screen.width > 991.98) {
     document.getElementById("plus4").style.minHeight = $('#plus5').height() - 24 + "px";
     document.getElementById('lite').innerHTML = "Новинка - модульные кухни Lite!";
 } else {
-    h-=500;
+    h -= 500;
 }
 
 wow0 = setInterval(function () {

@@ -6,6 +6,7 @@
     <meta name="description" content="Акции, скидки и подарки на белорусские кухни фабрики «Монтанья». Подробности уточняйте в салоне. Время работы салона: Ежедневно с 11:00 до 20:00. Контактный номер телефона: +7(921) 301-50-09. E-mail адрес: montanja-spb@yandex.ru">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="canonical" href="https://montanja-spb.ru/promotions/"/>
     <link rel="shortcut icon" href="../static/favicon.png" type="image/png">
     <title>Монтанья - СПБ. Наши акции</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,6 +34,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/61519021" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script src="../node_modules/lazysizes.min.js"></script>
 </head>
 <body>
     <header class="fixed-top">
@@ -79,7 +81,7 @@
             <div class="row mb-4">
                 <div class="promotions-example col-12">
                     <div class="card">
-                        <div class="card-img-top d-inline-block for-img">
+                        <div class="card-img-top d-inline-block for-img lazyload">
                             <div class="wrap">
                                 <div class="ribbon">Скидка</div>
                             </div>
@@ -95,7 +97,7 @@
         <hr>
     </main>
 
-    <footer id="catalogueFooter">
+    <footer>
         <div class="container-fluid">
             <div class="row flex-column d-flex justify-content-center align-items-center">
                 <h3 class="titleFooter mt-3 text-center">Приезжайте к нам в салон</h3>
@@ -114,14 +116,18 @@
             visibilityMenu = !visibilityMenu;
             navbarSupportedContent.classList.toggle('d-none');
         };
+
         if ((!!document.documentMode) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
             let socialNetworksBlock = document.getElementsByName('socialNetworks')[0];
             socialNetworksBlock.classList.add('special-margin-top');
         }
+
+        if ((screen.height >= 750) && (screen.height < 1000) && (screen.width < 500)) {
+            document.getElementsByTagName('footer')[0].classList.add('fixed-bottom')
+        }
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap-4.0.0.min.js"></script>
     <script src="js/arrow.js" defer></script>
     <script src="js/promotion.js" defer></script>
 </body>

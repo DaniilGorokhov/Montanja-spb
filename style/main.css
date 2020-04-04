@@ -37,16 +37,6 @@ body, html {
     100% {opacity: 1;}
 }
 
-@keyframes mountain {
-    from {top: 0;}
-    to {top: -105px;}
-}
-
-@keyframes opacity {
-    from {opacity: 0;}
-    to {opacity: 0.4;}
-}
-
 .logo {
     animation: logo 1s linear;
 }
@@ -99,7 +89,7 @@ header .container-fluid {
         font-size: 24px;
     }
 
-    .textForImg, .textFooter, .card-text, .plus-example p, .list {
+    .textForImg, .textFooter, .card-text, .plus-example p {
         font-size: 20px;
     }
     
@@ -116,21 +106,8 @@ header .container-fluid {
         height: 20em;
     }
 
-    .contactLineText p {
-        font-size: 1.3em;
-    }
-
-    .contactLineTitle h5 {
-        font-size: 1.65em;
-    }
-
-    .descriptionComapny, .titleFooter {
+    .titleFooter {
         font-size: 40px;
-    }
-
-    .paragraph {
-        text-indent: 64px;
-        font-size: 20px;
     }
 
     footer .container-fluid {
@@ -140,22 +117,6 @@ header .container-fluid {
     .icons {
         width: 30px;
         height: 30px;
-    }
-
-    .promotions-block-newWeb {
-        padding-top: 120px;
-    }
-
-    .downloadCat {
-        font-size: 2.3em;
-    }
-
-    .contacts-block, .about-us-block, .catalogue-block {
-        margin: 150px auto 0 auto;
-    }
-
-    .contacts-block .row {
-        margin-bottom: 20px;
     }
 
     .special-margin-top {
@@ -209,7 +170,7 @@ header .container-fluid {
         font-size: 3em;
     }
 
-    .toNewWeb a p, .toNewWeb p, .toNewWebWhite p, .titleForImg, .card-title, .contactLineTitle h5 {
+    .toNewWeb a p, .toNewWeb p, .toNewWebWhite p, .titleForImg, .card-title {
         font-size: 40px;
     }
 
@@ -230,7 +191,7 @@ header .container-fluid {
         margin-top: 0;
     }
 
-    .textForImg, .textFooter, .card-text, .plus-example p, form p, form label, .contactLineText p {
+    .textForImg, .textFooter, .card-text, .plus-example p, form p, form label {
         font-size: 32px;
     }
 
@@ -242,53 +203,17 @@ header .container-fluid {
         font-size: 160%;
     }
 
-    .paragraph {
-        text-indent: 32px;
-    }
-
-    .paragraph, .list {
-        font-size: 40px;
-        line-height: 1.2;
-    }
-
-    .advantages {
-        font-size: 3rem;
-    }
-
     footer .container-fluid {
         padding: 80px 60px;
     }
 
-    .titleFooter, .descriptionComapny {
+    .titleFooter {
         font-size: 50px;
     }
 
     .icons {
         width: 50px;
         height: 50px;
-    }
-
-    .promotions-block-newWeb {
-        padding-top: 250px;
-    }
-
-    .downloadCat {
-        font-size: 3.5em;
-        text-align: center;
-    }
-
-    .contacts-block, .about-us-block, .catalogue-block {
-        margin: 250px auto 0 auto;
-    }
-
-    .contacts-block .row {
-        margin-bottom: 30px;
-    }
-    
-    #catalogueFooter {
-        position: fixed;
-        left: 0;
-        bottom: 0;
     }
 
     .special-margin-top {
@@ -341,14 +266,6 @@ header .container-fluid {
     opacity: 0;
 }
 
-.opacityZero {
-    animation: toZero 0.5s linear;
-}
-
-.opacityOne {
-    animation: toOne 0.5s linear;
-}
-
 .carousel-caption h3 {
     animation: moveTo 1s linear;
     text-shadow: 4px 0 2.5px black;
@@ -375,10 +292,6 @@ header .container-fluid {
 
 .promotions-block {
     padding-top: 80px;
-}
-
-.promotions-block-newWeb {
-    margin-bottom: 100px;
 }
 
 .promotions-block, .our-projects-block, .our-pluses-block {
@@ -423,7 +336,7 @@ header .container-fluid {
 .for-img {
     width: 100%;
     height: 30em;
-    background-image: url(https://mr-mebel.com/wp-content/uploads/2018/04/mont3.jpg);
+    background-image: url(images/3.jpg);
     background-position: 0 60%;
     background-size: cover;
 }
@@ -484,11 +397,6 @@ header .container-fluid {
 .toPromotions, .toPromotions:hover {
     text-decoration: none;
     color: black;
-}
-
-.navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .toNewWeb {
@@ -555,18 +463,6 @@ header .container-fluid {
     color: white;
 }
 
-.about-factory-block {
-    margin: 100px auto;
-}
-
-.number-block {
-    border: solid 3px rgba(0, 0, 0, 0.7);
-}
-
-.number {
-    font-size: 84px;
-}
-
 .forImg img {
     user-select: none;
     margin-bottom: 1rem;
@@ -609,104 +505,10 @@ footer {
     margin-left: 1em;
 }
 
-hr {
-    margin-bottom: 100px;
+.opacityZero {
+    animation: toZero 0.5s linear;
 }
 
-.relative {
-    position: relative;
-    background-color: #fff;
-    animation: mountain 1.5s linear;
-    transition: 2s linear;
-    top: -105px;
-}
-
-.imgOfMountain {
-    width: 290px;
-    height: 100px;
-    margin: 0 auto;
-    user-select: none;
-    background-image: url(images/mountain.png);
-}
-
-#map {
-    min-height: 500px;
-    max-height: 800px;
-}
-
-.maps-block {
-    margin: 100px auto;
-}
-
-.forImgContact img {
-    width: 35px;
-    height: 35px;
-    user-select: none;
-}
-
-.contactLineImg {
-    display: inline-block;
-}
-
-.contactLineTitle h5 {
-    margin-bottom: 0;
-    display: inline-block;
-}
-
-.contactLineText {
-    min-height: 35px;
-}
-
-.contactLineText p {
-    margin-bottom: 0;
-}
-
-.paragraph {
-    margin-bottom: 5px;
-    text-align: justify;
-}
-
-.card-deck .card {
-    margin: 0;
-    width: 100%;
-}
-
-.modalImg {
-    max-width: 100%;
-}
-
-.beforeModalImg {
-    opacity: 1;
-    transition: all linear 0.5s;
-    max-width: 100%;
-}
-
-.beforeModalImg:hover {
-    cursor: pointer;
-}
-
-.relati {
-    position: relative;
-    background-color: #000;
-    opacity: 0;
-}
-
-.relati:hover {
-    cursor: pointer;
-    animation: opacity 0.5s linear;
-    opacity: 0.4;
-}
-
-.downloadCat {
-    text-decoration: none;
-    color: rgba(0,0,0,0.6);
-}
-
-.downloadCat:hover {
-    text-decoration: none;
-    color: #000;
-}
-
-.margins {
-    margin: 70px 0 100px 0;
+.opacityOne {
+    animation: toOne 0.5s linear;
 }
