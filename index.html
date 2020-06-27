@@ -75,17 +75,6 @@
 </header>
 
 <main>
-  <div class="toast" style="position: fixed; bottom: 0; left: 2%; opacity: 1; z-index: 1000">
-    <div class="toast-header">
-      <strong class="mr-auto">Внимание</strong>
-      <button onclick="close_notification()" type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="toast-body">
-      Мы продолжаем работу во время пандемии. Вы можете просчитать кухню своей мечты прямо сейчас!
-    </div>
-  </div>
   <div class="arrow-to-top" id="arrow_upward" onclick="scrollToTop()"></div>
   <div class="slider">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -317,10 +306,6 @@
         visibilityMenu = !visibilityMenu;
         navbarSupportedContent.classList.toggle('d-none');
     };
-    function close_notification() {
-        let notification = document.getElementsByClassName('toast')[0]
-        notification.hidden = true
-    }
 </script>
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 <script src="js/bootstrap-4.0.0.min.js"></script>
